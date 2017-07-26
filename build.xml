@@ -12,7 +12,6 @@
 	<target name="composer">
 		<exec
 				executable="composer"
-				logoutput="true"
 				passthru="true"
 				checkreturn="true"
 		>
@@ -23,7 +22,6 @@
 	<target name="lint">
 		<exec
 				executable="vendor/bin/parallel-lint"
-				logoutput="true"
 				passthru="true"
 				checkreturn="true"
 		>
@@ -41,7 +39,6 @@
 	<target name="cs">
 		<exec
 				executable="vendor/bin/phpcs"
-				logoutput="true"
 				passthru="true"
 				checkreturn="true"
 		>
@@ -58,7 +55,6 @@
 	<target name="cs-fix">
 		<exec
 				executable="vendor/bin/phpcbf"
-				logoutput="true"
 				passthru="true"
 				checkreturn="true"
 		>
@@ -75,7 +71,6 @@
 	<target name="tests">
 		<exec
 				executable="vendor/bin/phpunit"
-				logoutput="true"
 				passthru="true"
 				checkreturn="true"
 		>
@@ -118,7 +113,6 @@
 		></append>
 		<exec
 				executable="php"
-				logoutput="true"
 				passthru="true"
 				checkreturn="true"
 		>
