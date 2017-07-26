@@ -12,7 +12,6 @@
 	<target name="composer">
 		<exec
 				executable="composer"
-				passthru="true"
 				checkreturn="true"
 		>
 			<arg value="install"/>
@@ -22,7 +21,6 @@
 	<target name="lint">
 		<exec
 				executable="vendor/bin/parallel-lint"
-				passthru="true"
 				checkreturn="true"
 		>
 			<arg value="--exclude"/>
@@ -39,7 +37,6 @@
 	<target name="cs">
 		<exec
 				executable="vendor/bin/phpcs"
-				passthru="true"
 				checkreturn="true"
 		>
 			<arg value="--extensions=php"/>
@@ -55,7 +52,6 @@
 	<target name="cs-fix">
 		<exec
 				executable="vendor/bin/phpcbf"
-				passthru="true"
 				checkreturn="true"
 		>
 			<arg value="--extensions=php"/>
@@ -71,7 +67,6 @@
 	<target name="tests">
 		<exec
 				executable="vendor/bin/phpunit"
-				passthru="true"
 				checkreturn="true"
 		>
 			<arg value="-c"/>
@@ -113,7 +108,6 @@
 		></append>
 		<exec
 				executable="php"
-				passthru="true"
 				checkreturn="true"
 		>
 			<arg path="bin/phpstan"/>
